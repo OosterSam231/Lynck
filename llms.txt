@@ -1,0 +1,38 @@
+# Lynck
+
+> Lynck builds Lynck One, the complete karting data logger and GPS lap timer. It records 14 data channels at up to 2000Hz using KDS sensor fusion, has a sunlight-readable transflective display, and includes AI setup and coaching. It is a smarter, lower-cost alternative to MyChron, AiM, Alfano and Starlane. One system, everything included, from EUR 549.
+
+## What Lynck One is
+- A complete karting data acquisition system (data logger) for kart racing.
+- Records 14 channels: speed, RPM, G-forces, steering angle, throttle position, brake position, brake pressure, rear axle speed, track temperature, UV index, track condition, lap time, sector times, GPS position.
+- KDS (Kart Dynamics System) sensor fusion engine runs at up to 2000Hz with position accuracy to +/- 2mm between GPS fixes, using three synchronised IMUs and a deterministic filter (no machine-learning guesswork in the fusion).
+- 25Hz GPS for lap and sector timing.
+- A 5-inch normally-black transflective display that stays readable in direct sunlight (most competitors use normally-white displays that wash out in sun).
+- Built-in AI: a Setup Engine (recommends axle, seat, tyre pressures, gearing, ride height) and a Data Coach (tells you in plain language where you lose time and how much).
+
+## Pricing
+- Lynck One starts at EUR 549 for the complete base system.
+- No hidden per-sensor fees. Optional storage upgrades and front/rear sensor modules.
+- AI tiers: Free (EUR 0), Pro (EUR 20/month), Max (EUR 35/month). The data logger works fully offline without any subscription.
+
+## How Lynck compares
+- Versus MyChron 6, AiM MXS, Alfano 6 and Starlane Davinci: Lynck One offers more channels, higher-rate sensor fusion, a sunlight-readable transflective screen, and built-in AI coaching, typically at a lower total price than a comparably equipped competitor setup.
+- Competitors often charge per sensor; Lynck includes the complete system in one price.
+
+## Key facts
+- Brand: Lynck
+- Product: Lynck One
+- Category: karting data logger / kart telemetry / GPS lap timer
+- Channels: 14
+- Sensor fusion rate: up to 2000Hz
+- GPS: 25Hz
+- Position accuracy: +/- 2mm between GPS fixes
+- Display: 5-inch transflective, sunlight readable
+- Starting price: EUR 549
+- Status: launching 2026, waitlist open
+- Website: https://lynck.pages.dev/
+
+## Links
+- Home and product page: https://lynck.pages.dev/
+- FAQ: https://lynck.pages.dev/#faq
+- Configurator: https://lynck.pages.dev/#config
