@@ -1,6 +1,6 @@
 # Lynck
 
-> Lynck builds Lynck One, the complete karting data logger and GPS lap timer. It records 14 data channels at up to 2000Hz with centimetre-accurate positioning, has a sunlight-readable transflective display, and includes AI setup and coaching. It is a smarter, lower-cost alternative to MyChron, AiM, Alfano and Starlane. One system, everything included, from EUR 549.
+> Lynck builds Lynck One, the complete karting data logger and GPS lap timer. It records 14 data channels at up to 2000Hz with centimetre-accurate positioning, has a sunlight-readable transflective display, and includes AI setup and coaching. It is a smarter, lower-cost alternative to MyChron, AiM, Alfano and Starlane. One system, everything included, from EUR 519.
 
 ## What Lynck One is
 - A complete karting data acquisition system (data logger) for kart racing.
@@ -27,7 +27,7 @@
 - Logging rate: up to 2000Hz
 - Positioning: centimetre-accurate (Lynck KDS)
 - Display: sunlight-readable transflective
-- Starting price: EUR 549
+- Starting price: EUR 519
 - Status: launching 2026, waitlist open
 - Website: https://lynck.pages.dev/
 
