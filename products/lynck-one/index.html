@@ -628,7 +628,7 @@ footer a:hover{text-decoration:underline}
     <div class="nav-left">
       <a class="logo" href="/" aria-label="Lynck home">Lynck</a>
       <div class="nav-links">
-        <a href="/products" class="nav-link" data-i18n="nav.products">Products</a>
+        <a href="/products" class="nav-link is-current" data-i18n="nav.products">Products</a>
         <a href="/team" class="nav-link" data-i18n="nav.team">Team</a>
         <a href="/contact" class="nav-link" data-i18n="nav.contact">Contact</a>
       </div>
@@ -647,14 +647,6 @@ footer a:hover{text-decoration:underline}
   </div>
 </nav>
 
-<!-- SECTION 1 — INTRO -->
-<header class="section intro" id="top">
-  <h1 class="intro-word" id="introLogo">Lynck</h1>
-  <div class="scroll-cue" id="scrollCue">
-    <p data-i18n="hero.scroll">Scroll to continue</p>
-    <svg class="arrow" viewBox="0 0 18 28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v22M2 17l7 7 7-7"/></svg>
-  </div>
-</header>
 <!-- SECTIONS 2 + 3 — HERO → PRODUCT REVEAL -->
 <div class="stage" id="stage">
   <div class="stage-pin" id="stagePin">
@@ -686,24 +678,208 @@ footer a:hover{text-decoration:underline}
     </div>
   </div>
 </div>
-<!-- SECTION 9 — THE STORY -->
-<section class="section story" id="story">
-  <div class="sec-index">06</div>
-  <div class="story-head">
-    <p class="eyebrow"><span class="num">06</span> — <span data-i18n="story.eyebrow">Origin</span></p>
-    <h2 data-i18n="story.h2">Why Lynck?</h2>
-    <p class="caps" data-i18n="story.sub">Born on track</p>
-  </div>
-  <div class="story-lines" id="storyLines">
-    <p class="line" data-i18n="story.l1">Karting data hasn't truly moved since <strong>2006</strong>.</p>
-    <p class="line" data-i18n="story.l2">The same hardware, re-released year after year — at prices that only climb. The big names don't compete with each other, and they don't need to innovate.</p>
-    <p class="line" data-i18n="story.l3">They just keep <strong>printing money</strong> while the technology stands still.</p>
-    <p class="line" data-i18n="story.l4">Lynck was born on track to break that cycle — <strong>real innovation, honest pricing, one kart at a time</strong>.</p>
+<!-- SECTION 4 — KDS -->
+<section class="section kds" id="kds">
+  <div class="sec-index">02</div>
+  <div class="kds-inner" id="kdsInner">
+    <p class="eyebrow"><span class="num">02</span> — <span data-i18n="kds.eyebrow">Sensor Fusion</span></p>
+    <h2>Lynck <span class="accent">KDS</span></h2>
+    <p class="caps">Kart Dynamics System</p>
+    <p class="body" data-i18n="kds.body">Lynck KDS is our precision positioning engine, logging at up to 2000Hz. Where ordinary loggers rely on GPS alone, KDS tracks exactly where your kart is — continuously, all the way around the lap — for centimetre-accurate racing lines and corner data. The result: data you can actually trust, not a rough estimate.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="n">2000</div><div class="l">Hz logging rate</div></div>
+      <div class="stat"><div class="n">KDS</div><div class="l">precision engine</div></div>
+      <div class="stat"><div class="n">0</div><div class="l">black boxes</div></div>
+    </div>
+    <span class="badge" data-i18n="badge.soon">Coming Soon</span>
   </div>
 </section>
 
 
+<!-- MARQUEE divider -->
+<div class="scroll-marquee" aria-hidden="true">
+  <div class="mq-track" id="mqTrack"></div>
+</div>
+<!-- SECTION 5 — WHAT IT MEASURES -->
+<section class="section measures" id="measures">
+  <div class="sec-index">03</div>
+  <div class="measures-head">
+    <p class="eyebrow"><span class="num">03</span> — <span data-i18n="measures.eyebrow">Telemetry</span></p>
+    <h2 data-i18n="measures.h2">What Lynck sees.</h2>
+    <p class="caps" data-i18n="measures.cap">14 channels · one system</p>
+  </div>
+  <div class="metric-list" id="metricList"></div>
+</section>
+<!-- SECTION 6 — AI (dark chapter, horizontal) -->
+<section class="ai" id="ai">
+  <div class="sec-index">04</div>
+  <div class="ai-track" id="aiTrack">
+    <div class="ai-panel">
+      <div>
+        <p class="caps">Lynck Intelligence — 01</p>
+        <h2 data-i18n="ai.setup.h">AI Setup Engine</h2>
+        <p data-i18n="ai.setup.p">Log your setups and how each one felt. The Setup Engine runs on a custom model trained on thousands of real karting sessions — combined with your own history and the live track conditions, it hands you the ideal setup before you roll out: axle, seat, tyre pressures, gearing, ride height.</p>
+        <p class="ai-sub" data-i18n="ai.setup.sub">You bring the feedback. It brings the setup sheet.</p>
+      </div>
+      <div class="mock" aria-hidden="true">
+        <div class="mock-bar"></div>
+        <div class="mock-bar"></div>
+        <div class="mock-bar"></div>
+        <div class="mock-row"><div class="chip"></div><div class="chip"></div><div class="chip"></div></div>
+      </div>
+    </div>
+    <div class="ai-panel">
+      <div>
+        <p class="caps">Lynck Intelligence — 02</p>
+        <h2 data-i18n="ai.coach.h">AI Data Coach</h2>
+        <p data-i18n="ai.coach.p">Trained on thousands of laps from thousands of drivers, it reads every lap against your data and an ideal reference, then tells you in plain words: "you're faster when you brake later into turn 4 — on average you brake ~6m too early and lose 0.18s there." Concrete, corner-by-corner.</p>
+        <p class="ai-sub" data-i18n="ai.coach.sub">After each session it builds a report — "try this next time", or "you nailed it lap 7, then drifted off" — so every run makes you quicker.</p>
+      </div>
+      <div class="mock" aria-hidden="true">
+        <div class="mock-bar"></div>
+        <div class="mock-bar"></div>
+        <div class="mock-bar"></div>
+        <div class="mock-row"><div class="chip"></div><div class="chip"></div><div class="chip"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SECTION 7 — QUOTE -->
+<section class="section quote" id="quoteSec">
+  <h2 id="quoteLine" data-i18n="quote.line">What others charge per sensor, we charge for the<br><span class="accent">complete system.</span></h2>
+</section>
+<section class="section roadmap" id="roadmap">
+  <div class="sec-index">08</div>
+  <p class="eyebrow"><span class="num">08</span> — <span data-i18n="roadmap.eyebrow">Roadmap</span></p>
+  <h2 data-i18n="roadmap.h2">Built to evolve.</h2>
+  <div class="road-grid">
+    <div class="road-card active">
+      <div class="now-badge">Now</div>
+      <div class="yr">2026</div>
+      <h3>Lynck One</h3>
+      <div class="rp">€519</div>
+      <p data-i18n="rm.one">5" sunlight-readable display. GPS lap timing. KDS positioning. AI Free tier. Handbuilt by Sam. All-day battery.</p>
+    </div>
+    <div class="road-card">
+      <div class="yr">2027</div>
+      <h3>Lynck Delta</h3>
+      <div class="rp">€699</div>
+      <p data-i18n="rm.delta">Full-colour display. Full KDS at 2000Hz. Front + rear wireless modules. Advanced AI.</p>
+    </div>
+    <div class="road-card">
+      <div class="yr">2027</div>
+      <h3>Lynck Apex</h3>
+      <div class="rp">€999</div>
+      <p data-i18n="rm.apex">8" display. Full sensor suite. Best-in-class everything. For the serious competitor.</p>
+    </div>
+    <div class="road-card">
+      <div class="yr">2028</div>
+      <h3>Lynck Core</h3>
+      <div class="rp">€299</div>
+      <p data-i18n="rm.core">Budget-first. No compromises on data. Just fewer extras. Every driver deserves it.</p>
+    </div>
+  </div>
+</section>
+<!-- SECTION 10 — CONFIGURATOR -->
+<section class="section config" id="config">
+  <div class="sec-index">09</div>
+  <div class="config-head">
+    <p class="eyebrow"><span class="num">09</span> — <span data-i18n="config.eyebrow">Configure</span></p>
+    <h2 data-i18n="config.h2">Build Your Lynck One</h2>
+    <p class="sub" data-i18n="cfg.sub">Every Lynck One is built to your kart. Configurations start from €519 — get in touch and we'll put together the right package for you.</p>
+  </div>
+  <div class="config-grid">
+    <div class="cs-overlay" data-i18n="cfg.csoon">Coming Soon</div>
+    <div class="cfg-simple">
+      <div class="cfg-from">
+        <span class="cfg-from-label" data-i18n="cfg.from">Configurations from</span>
+        <span class="cfg-from-price">€519</span>
+      </div>
+      <a class="cfg-contact" href="#contact">
+        <div class="cfg-contact-txt">
+          <strong data-i18n="cfg.contact.h">Build your Lynck One</strong>
+          <span data-i18n="cfg.contact.p">Storage, sensor modules and AI tier are configured per kart. Get in touch and we'll build the right package for you.</span>
+        </div>
+        <span class="cfg-contact-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- SECTION 11 — AI TIERS -->
+<section class="section tiers" id="tiers">
+  <div class="sec-index">10</div>
+  <p class="eyebrow"><span class="num">10</span> — <span data-i18n="tiers.eyebrow">Intelligence</span></p>
+  <h2 data-i18n="tiers.h2">Choose your intelligence.</h2>
+  <div class="tier-row">
+    <div class="tier">
+      <h3>Free</h3>
+      <p class="pr"><em>€0</em><span data-i18n="t.permo">/month</span></p>
+      <ul>
+        <li data-i18n="t.setup">AI Setup Engine</li>
+        <li data-i18n="t.coach">AI Data Coach</li>
+        <li class="neutral" data-i18n="t.std">Standard AI model</li>
+        <li class="neutral" data-i18n="t.shared">Session data contributed to Lynck AI training</li>
+      </ul>
+    </div>
+    <div class="tier">
+      <h3>Pro</h3>
+      <p class="pr"><em>€20</em><span data-i18n="t.permoY">/month · €180/year</span></p>
+      <ul>
+        <li data-i18n="t.setup">AI Setup Engine</li>
+        <li data-i18n="t.coach">AI Data Coach</li>
+        <li class="neutral" data-i18n="t.latest">Latest AI model · INT8</li>
+        <li class="neutral" data-i18n="t.shared">Session data contributed to Lynck AI training</li>
+      </ul>
+    </div>
+    <div class="tier max">
+      <h3>Max</h3>
+      <p class="pr"><em>€35</em><span data-i18n="t.permoY2">/month · €300/year</span></p>
+      <ul>
+        <li data-i18n="t.setup">AI Setup Engine</li>
+        <li data-i18n="t.coach">AI Data Coach</li>
+        <li class="neutral" data-i18n="t.best">Best AI model · FP16</li>
+        <li data-i18n="t.private">Session data fully private</li>
+      </ul>
+    </div>
+  </div>
+  <p class="tier-note" data-i18n="tier.note">The Lynck AI models are real, custom-trained neural networks — built and improved on anonymised session data contributed by Free and Pro tier users. That data is never sold or shared with third parties. You can keep your data fully private at any time and still log, review and analyse every session yourself — you simply won't have access to the AI Setup Engine or Data Coach. Lynck One keeps working perfectly offline; the AI features are the only thing tied to your tier. Upgrade or change your tier whenever you like.</p>
+</section>
 
+<section class="section faq" id="faq">
+  <p class="eyebrow"><span class="num">13</span> — <span data-i18n="faq.eyebrow">FAQ</span></p>
+  <h2 data-i18n="faq.h2">Karting data, answered.</h2>
+  <p class="lead" data-i18n="faq.lead">Everything you might ask before choosing a karting data logger, lap timer or AI coach.</p>
+  <div class="faq-list">
+    <details class="faq-item" open>
+      <summary><span data-i18n="faq.q1">What is the best karting data logger?</span><span class="q-ic"></span></summary>
+      <div class="a" data-i18n="faq.a1">Lynck One is a complete karting data logger that records 14 channels at up to 2000Hz with centimetre-accurate positioning, a sunlight-readable transflective display, a GPS lap timer and built-in AI setup and coaching. Where most loggers charge separately for every sensor, Lynck includes the full system in one price from €519.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span data-i18n="faq.q2">Is Lynck a good alternative to MyChron, AiM, Alfano or Starlane?</span><span class="q-ic"></span></summary>
+      <div class="a" data-i18n="faq.a2">Yes. Compared to a MyChron 6, AiM MXS, Alfano 6 or Starlane Davinci, Lynck One offers more data channels, more accurate positioning, a normally-black transflective screen that stays readable in direct sunlight, and AI coaching — usually at a lower total price than a comparably equipped competitor setup. One system, everything included.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span data-i18n="faq.q3">Does Lynck One work as a GPS lap timer?</span><span class="q-ic"></span></summary>
+      <div class="a" data-i18n="faq.a3">Absolutely. Lynck One has a built-in GPS for precise lap and sector times, combined with the Lynck KDS precision engine that keeps tracking your position continuously around the lap — so your racing line and lap data stay accurate to the centimetre, not just at each GPS point.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span data-i18n="faq.q4">What data channels does it record?</span><span class="q-ic"></span></summary>
+      <div class="a" data-i18n="faq.a4">Lynck One logs 14 channels in total — covering speed and engine data, driver inputs, grip and track conditions, plus lap and sector timing and GPS position. Everything is logged together and time-synced for full analysis.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span data-i18n="faq.q5">What does the AI setup engine and data coach do?</span><span class="q-ic"></span></summary>
+      <div class="a" data-i18n="faq.a5">The AI Setup Engine runs on a custom model trained on thousands of real karting sessions: log how the kart felt and it hands you an ideal setup — axle, seat, tyre pressures, gearing, ride height — based on your history and the live track conditions. The AI Data Coach reads every lap against an ideal reference and tells you in plain words where you lose time and how much, then builds a report after each session.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span data-i18n="faq.q6">How much does Lynck One cost?</span><span class="q-ic"></span></summary>
+      <div class="a" data-i18n="faq.a6">Lynck One starts at €519 for the complete base system. You can add storage upgrades and front/rear sensor modules in the configurator. There are no hidden per-sensor fees — what others charge for a single sensor, Lynck charges for the complete system.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span data-i18n="faq.q7">Does it work offline and is my data private?</span><span class="q-ic"></span></summary>
+      <div class="a" data-i18n="faq.a7">Yes. Lynck One logs and works fully offline — the data logger never needs an internet connection. You can keep your data completely private and still log, review and analyse every session yourself. Only the AI features (Setup Engine and Data Coach) are tied to a subscription tier.</div>
+    </details>
+  </div>
+</section>
 
 <div class="dark-tail" id="darkTail">
 <section class="section cta" id="cta">
