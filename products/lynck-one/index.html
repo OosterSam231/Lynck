@@ -1263,7 +1263,8 @@ footer a:hover{text-decoration:underline}
 /* ============ FROSTED NAV ON SCROLL + DARK SECTION DETECT ============ */
 (function(){
   const nav = document.getElementById('nav');
-  const zones = [document.getElementById('ai'), document.getElementById('darkTail')];
+  if(!nav) return;
+  const zones = [document.getElementById('ai'), document.getElementById('darkTail')].filter(Boolean);
   const onScroll = () => {
     nav.classList.toggle('scrolled', window.scrollY > 40);
     const navBottom = nav.getBoundingClientRect().bottom;
@@ -1308,6 +1309,7 @@ footer a:hover{text-decoration:underline}
     ['GPS Position',I.gps,'Centimetre-accurate']
   ];
   const list = document.getElementById('metricList');
+  if(!list) return;
   list.innerHTML = metrics.map((m,i)=>
     `<div class="metric"><div class="ic">${m[1]}</div><div class="mtxt"><div class="label">${m[0]}</div><div class="mspec">${m[2]}</div></div><div class="idx">${String(i+1).padStart(2,'0')} / ${metrics.length}</div></div>`
   ).join('');
@@ -1323,6 +1325,7 @@ const LYNCK_ENDPOINT='https://formsubmit.co/ajax/info.lynck@gmail.com';
   const btn=document.getElementById('waitBtn');
   const input=document.getElementById('waitEmail');
   const msg=document.getElementById('ctaMsg');
+  if(!btn || !input || !msg) return;
   let sending=false;
   async function join(){
     if(sending) return;
@@ -1384,6 +1387,7 @@ const LYNCK_ENDPOINT='https://formsubmit.co/ajax/info.lynck@gmail.com';
 (function(){
   const pin=document.getElementById('stagePin');
   const tilt=document.getElementById('tilt');
+  if(!pin || !tilt) return;
   if(matchMedia('(hover:none)').matches || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
   pin.addEventListener('mousemove',e=>{
     const r=pin.getBoundingClientRect();
@@ -1397,7 +1401,7 @@ const LYNCK_ENDPOINT='https://formsubmit.co/ajax/info.lynck@gmail.com';
 })();
 
 /* ============ GSAP SCROLL CHOREOGRAPHY ============ */
-window.addEventListener('load',()=>{
+function lynckChoreography(){
   if(!window.gsap || !window.ScrollTrigger){ revealAll(); return; }
   gsap.registerPlugin(ScrollTrigger);
 
@@ -1576,9 +1580,12 @@ window.addEventListener('load',()=>{
   function revealAll(){
     document.querySelectorAll('#introLogo,#scrollCue,#revealCopy').forEach(el=>{
       el.style.opacity='1'; el.style.visibility='visible';
-    });
-  }
 });
+  }
+}
+// Run choreography whether or not the load event has already fired
+if(document.readyState==='complete'){ lynckChoreography(); }
+else{ window.addEventListener('load', lynckChoreography); }
 setTimeout(()=>{
   if(!window.gsap){
     document.querySelectorAll('#introLogo,#scrollCue,#revealCopy').forEach(el=>{
